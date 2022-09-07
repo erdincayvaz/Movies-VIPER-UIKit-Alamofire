@@ -7,12 +7,12 @@
 
 import Foundation
 
-// MARK: - NowPlaying
+// MARK: - Welcome
 struct NowPlaying: Codable {
-    let dates: NowPlayingDates
-    let page: Int
+    let dates: Dates?
+    let page: Int?
     let results: [NowPlayingResult]
-    let totalPages, totalResults: Int
+    let totalPages, totalResults: Int?
 
     enum CodingKeys: String, CodingKey {
         case dates, page, results
@@ -22,23 +22,23 @@ struct NowPlaying: Codable {
 }
 
 // MARK: - Dates
-struct NowPlayingDates: Codable {
-    let maximum, minimum: String
+struct Dates: Codable {
+    let maximum, minimum: String?
 }
 
 // MARK: - Result
 struct NowPlayingResult: Codable {
-    let adult: Bool
-    let backdropPath: String
-    let genreIDS: [Int]
-    let id: Int
-    let originalLanguage: OriginalLanguage
-    let originalTitle, overview: String
-    let popularity: Double
-    let posterPath, releaseDate, title: String
-    let video: Bool
-    let voteAverage: Double
-    let voteCount: Int
+    let adult: Bool?
+    let backdropPath: String?
+    let genreIDS: [Int]?
+    let id: Int?
+    let originalLanguage: OriginalLanguage?
+    let originalTitle, overview: String?
+    let popularity: Double?
+    let posterPath, releaseDate, title: String?
+    let video: Bool?
+    let voteAverage: Double?
+    let voteCount: Int?
 
     enum CodingKeys: String, CodingKey {
         case adult
@@ -58,5 +58,6 @@ struct NowPlayingResult: Codable {
 
 enum OriginalLanguage: String, Codable {
     case en = "en"
+    case es = "es"
     case ja = "ja"
 }

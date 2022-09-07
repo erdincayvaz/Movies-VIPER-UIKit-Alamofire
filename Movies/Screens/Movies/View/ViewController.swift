@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
             slide.imgBackground.image = UIImage(systemName: "trash")
             
-            slide.imgBackground.kf.setImage(with: URL(string:Constant.imageBaseURL + item.backdropPath))
+            slide.imgBackground.kf.setImage(with: URL(string:Constant.imageBaseURL + (item.backdropPath ?? "")))
             slide.lblTitle.text = item.title
             slide.lblDescription.text = item.overview
             slide.view.addTarget(self, action: #selector(self.pageControlSelectionAction(_:)), for: .touchUpInside)
