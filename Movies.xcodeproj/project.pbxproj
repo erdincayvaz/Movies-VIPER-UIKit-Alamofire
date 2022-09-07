@@ -194,11 +194,10 @@
 		FA00C4B228ACC5DA00E774A4 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FAFB9D0C28C8CE0500010DDE /* Screens */,
 				FA00C51228AE747700E774A4 /* Utilities */,
 				FA00C4E628ACC75400E774A4 /* Network */,
-				FA00C4E528ACC74D00E774A4 /* ViewModel */,
 				FA00C4E428ACC74700E774A4 /* View */,
-				FA00C4E328ACC74100E774A4 /* Model */,
 				FA00C4B328ACC5DA00E774A4 /* AppDelegate.swift */,
 				FA00C4B528ACC5DA00E774A4 /* SceneDelegate.swift */,
 				FA00C4BC28ACC5DC00E774A4 /* Assets.xcassets */,
@@ -224,34 +223,14 @@
 			path = MoviesUITests;
 			sourceTree = "<group>";
 		};
-		FA00C4E328ACC74100E774A4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FA00C4EB28ACCBF300E774A4 /* NowPlaying.swift */,
-				FA00C50628AD02F400E774A4 /* UpComing.swift */,
-				FA00C50E28AE14A000E774A4 /* Movie.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		FA00C4E428ACC74700E774A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FA00C51128AE745C00E774A4 /* Storyboards */,
 				FA00C50128ACFE5800E774A4 /* Cell */,
 				FA00C4F628ACE1F900E774A4 /* Slide */,
-				FA00C4F528ACE1F000E774A4 /* VC */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FA00C4E528ACC74D00E774A4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FA00C4EF28ACD7DC00E774A4 /* MoviesViewModel.swift */,
-				FA00C50C28AE138200E774A4 /* MovieDetailViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FA00C4E628ACC75400E774A4 /* Network */ = {
@@ -261,15 +240,6 @@
 				67935BF228AEEC9B000BA6F0 /* Base */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		FA00C4F528ACE1F000E774A4 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				FA00C4B728ACC5DA00E774A4 /* ViewController.swift */,
-				FA00C50A28AD1D3900E774A4 /* MovieDetailViewController.swift */,
-			);
-			path = VC;
 			sourceTree = "<group>";
 		};
 		FA00C4F628ACE1F900E774A4 /* Slide */ = {
@@ -307,6 +277,116 @@
 				67507ED028AEF70500E4BD0D /* Constant.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FAFB9D0C28C8CE0500010DDE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB9D0D28C8CE0F00010DDE /* Movies */,
+				FAFB9D0E28C8CE1700010DDE /* MovieDetail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAFB9D0D28C8CE0F00010DDE /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB9D1128C8CEC800010DDE /* View */,
+				FAFB9D1228C8CED900010DDE /* Interactor */,
+				FAFB9D1328C8CEE400010DDE /* Presenter */,
+				FAFB9D0F28C8CE8C00010DDE /* Entity */,
+				FAFB9D1428C8CEED00010DDE /* Router */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		FAFB9D0E28C8CE1700010DDE /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB9D1528C8CF1200010DDE /* View */,
+				FAFB9D1628C8CF1900010DDE /* Interactor */,
+				FAFB9D1728C8CF2300010DDE /* Presenter */,
+				FAFB9D1028C8CE9500010DDE /* Entitiy */,
+				FAFB9D1828C8CF3300010DDE /* Router */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		FAFB9D0F28C8CE8C00010DDE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C4EB28ACCBF300E774A4 /* NowPlaying.swift */,
+				FA00C50628AD02F400E774A4 /* UpComing.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FAFB9D1028C8CE9500010DDE /* Entitiy */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C50E28AE14A000E774A4 /* Movie.swift */,
+			);
+			path = Entitiy;
+			sourceTree = "<group>";
+		};
+		FAFB9D1128C8CEC800010DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C4B728ACC5DA00E774A4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFB9D1228C8CED900010DDE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FAFB9D1328C8CEE400010DDE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C4EF28ACD7DC00E774A4 /* MoviesViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAFB9D1428C8CEED00010DDE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FAFB9D1528C8CF1200010DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C50A28AD1D3900E774A4 /* MovieDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFB9D1628C8CF1900010DDE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FAFB9D1728C8CF2300010DDE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA00C50C28AE138200E774A4 /* MovieDetailViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAFB9D1828C8CF3300010DDE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
