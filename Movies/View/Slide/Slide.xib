@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-dC-dAO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBL-TJ-Jy4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                    <color key="backgroundColor" name="image_foreground_start"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A pair of young lovers free their New England town, which causes a local search party to fan out to find them." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIU-4d-BVl">
+                    <rect key="frame" x="20" y="165.5" width="374" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moonrise Kingdom (2012)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8A-Vi-94T">
+                    <rect key="frame" x="20" y="136" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-Fl-Qgk" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JIU-4d-BVl" secondAttribute="trailing" constant="20" id="3lA-PJ-jcP"/>
+                <constraint firstItem="vm8-dC-dAO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4fn-O7-zTU"/>
+                <constraint firstItem="vm8-dC-dAO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7HF-u1-Eva"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p8A-Vi-94T" secondAttribute="trailing" constant="20" id="7wS-eK-fma"/>
+                <constraint firstItem="vm8-dC-dAO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9EK-to-alW"/>
+                <constraint firstItem="aRe-Fl-Qgk" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Bgu-cc-Mth"/>
+                <constraint firstItem="p8A-Vi-94T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="HhI-uH-t7s"/>
+                <constraint firstItem="aRe-Fl-Qgk" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="IWK-id-Log"/>
+                <constraint firstItem="zBL-TJ-Jy4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MRD-Jb-F3a"/>
+                <constraint firstItem="JIU-4d-BVl" firstAttribute="top" secondItem="p8A-Vi-94T" secondAttribute="bottom" constant="8.5" id="NEr-xy-Hyb"/>
+                <constraint firstItem="aRe-Fl-Qgk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WYe-sk-q4E"/>
+                <constraint firstItem="vm8-dC-dAO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X5t-CU-zUy"/>
+                <constraint firstItem="zBL-TJ-Jy4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fR4-YX-Aqi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JIU-4d-BVl" secondAttribute="bottom" constant="36" id="fe7-g5-Ou6"/>
+                <constraint firstItem="zBL-TJ-Jy4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kT5-ud-yaI"/>
+                <constraint firstItem="JIU-4d-BVl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="myH-Rf-Lny"/>
+                <constraint firstItem="zBL-TJ-Jy4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nds-WP-WF0"/>
+                <constraint firstItem="aRe-Fl-Qgk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wpV-WJ-HSg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgBackground" destination="vm8-dC-dAO" id="IpU-3M-aaA"/>
+                <outlet property="lblDescription" destination="JIU-4d-BVl" id="pyU-YY-6nZ"/>
+                <outlet property="lblTitle" destination="p8A-Vi-94T" id="7We-6q-zeF"/>
+                <outlet property="view" destination="aRe-Fl-Qgk" id="bb3-y7-RrE"/>
+            </connections>
+            <point key="canvasLocation" x="79.710144927536234" y="295.3125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="image_foreground_start">
+            <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
